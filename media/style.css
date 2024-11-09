@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #e0e0e0;
+  background-color: #222;
+}
+
+.container {
+  padding: 20px;
+}
+
+#folderPathInput {
+  width: 80%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.tree-container {
+  margin-top: 20px;
+}
+
+.tree-level {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  position: relative;
+}
+
+.tree-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #666;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 8px;
+  background-color: #333;
+}
+
+.tree-item .icon {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.node-info {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.node-info span {
+  margin-right: 10px;
+}
+
+.actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #e0e0e0;
+}
+
+.actions button:hover {
+  color: #f0f0f0;
+}
+
+/* SVG Link Styles */
+.link-line {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+svg line {
+  stroke: #666;
+  stroke-width: 2;
+}
