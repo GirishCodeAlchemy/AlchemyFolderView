@@ -49,9 +49,13 @@ class FolderExplorerPanel {
           this._panel.webview.postMessage({ command: 'showTree', treeData });
           break;
         case 'addItem':
+          fs.mkdirSync(message.path);
+          this._panel.webview.postMessage({ command: 'reloadTree' });
           // Code to add a file or folder at message.path
           break;
         case 'deleteItem':
+          fs.rmdirSync(message.path, { recursive: true });
+          this._panel.webview.postMessage({ command: 'reloadTree' });
           // Code to delete a file or folder at message.path
           break;
       }
