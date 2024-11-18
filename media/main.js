@@ -44,6 +44,29 @@ function drawLinks() {
       parent.appendChild(line);
     }
   });
+  // document.querySelectorAll('.tree-level').forEach(level => {
+  //   const items = Array.from(level.children);
+  //   if (items.length > 1) {
+  //     items.forEach((item, index) => {
+  //       if (index < items.length - 1) {
+  //         const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+  //         const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  //         svg.classList.add('link-line');
+
+  //         const start = item.getBoundingClientRect();
+  //         const end = items[index + 1].getBoundingClientRect();
+
+  //         line.setAttribute('x1', start.right);
+  //         line.setAttribute('y1', start.top + start.height / 2);
+  //         line.setAttribute('x2', end.left);
+  //         line.setAttribute('y2', end.top + end.height / 2);
+
+  //         svg.appendChild(line);
+  //         document.body.appendChild(svg);
+  //       }
+  //     });
+  //   }
+  // });
 }
 
 

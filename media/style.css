@@ -24,6 +24,7 @@ button {
   background-color: #444;
   color: white;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .tree-container {
